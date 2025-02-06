@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái Cây Đặc Sản Bến Tre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid #e8491d;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('https://images.unsplash.com/photo-1549824789-8930e7a5c4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover; /* Thay đổi URL ảnh */
+            text-align: center;
+            color: #fff;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        #boxes {
+            margin-top: 20px;
+        }
+
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+
+        #boxes .box img {
+            width: 90px;
+        }
+
+        #main {
+            float: left;
+            width: 70%;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        #sidebar {
+            float: right;
+            width: 30%;
+            background: #35424a;
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #sidebar input[type="email"] {
+            padding: 5px;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin-top: 0;
+        }
+
+        .product .price {
+            font-weight: bold;
+            color: #e8491d;
+        }
+
+        .product .quantity {
+            margin-bottom: 10px;
+        }
+
+        .product .quantity input {
+            width: 50px;
+            padding: 5px;
+        }
+
+        .btn {
+            background: #e8491d;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #35424a;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+
+        /* Responsive CSS */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            #boxes .box,
+            #main,
+            #sidebar {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+
+            header {
+                padding-bottom: 20px;
+            }
+
+            #showcase h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Trái Cây</span> Đặc Sản Bến Tre</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Chào mừng đến với cửa hàng trái cây Bến Tre!</h1>
+            <p>Chúng tôi cung cấp các loại trái cây tươi ngon nhất từ vùng đất Bến Tre.</p>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://via.placeholder.com/90">
+                <h3>Sản phẩm chất lượng</h3>
+                <p>Trái cây tươi ngon, được chọn lọc kỹ càng.</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/90">
+                <h3>Giao hàng nhanh chóng</h3>
+                <p>Chúng tôi giao hàng tận nơi trong thời gian sớm nhất.</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/90">
+                <h3>Hỗ trợ tận tình</h3>
+                <p>Luôn sẵn sàng giải đáp mọi thắc mắc của bạn.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <section id="main">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Bưởi Da Xanh">
+                <h3>Bưởi Da Xanh</h3>
+                <p class="price">Giá: 50.000 VNĐ/kg</p>
+                <div class="quantity">
+                    Số lượng: <input type="number" value="1" min="1" data-price="50000" data-name="Bưởi Da Xanh"> kg
+                </div>
+                <button class="btn add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Dừa Sáp">
+                <h3>Dừa Sáp</h3>
+                <p class="price">Giá: 80.000 VNĐ/trái</p>
+                <div class="quantity">
+                    Số lượng: <input type="number" value="1" min="1" data-price="80000" data-name="Dừa Sáp"> trái
+                </div>
+                <button class="btn add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Chôm Chôm">
+                <h3>Chôm Chôm</h3>
+                <p class="price">Giá: 40.000 VNĐ/kg</p>
+                <div class="quantity">
+                    Số lượng: <input type="number" value="1" min="1" data-price="40000" data-name="Chôm Chôm"> kg
+                </div>
+                <button class="btn add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Măng Cụt">
+                <h3>Măng Cụt</h3>
+                <p class="price">Giá: 70.000 VNĐ/kg</p>
+                <div class="quantity">
+                    Số lượng: <input type="number" value="1" min="1" data-price="70000" data-name="Măng Cụt"> kg
+                </div>
+                <button class="btn add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </section>
+
+        <section id="sidebar">
+            <h2>Giỏ hàng</h2>
+            <ul id="cart">
+                <!-- Các sản phẩm đã chọn sẽ hiển thị ở đây -->
+            </ul>
+            <p>Tổng tiền: <span id="total">0</span> VNĐ</p>
+            <form id="order-form">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit" class="btn">Đặt hàng</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p>Cửa hàng trái cây Bến Tre &copy; 2023</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_EMAILJS_USER_ID"); // Thay YOUR_EMAILJS_USER_ID bằng User ID của bạn
+        })();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cart = document.getElementById('cart');
+            const totalElement = document.getElementById('total');
+            const orderForm = document.getElementById('order-form');
+            let total = 0;
+
+            let cartItems = [];
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const product = this.parentNode;
+                    const productName = product.querySelector('h3').textContent;
+                    const productPrice = parseFloat(product.querySelector('.price').textContent.replace(/[^0-9]/g, ''));
+                    const quantity = parseInt(product.querySelector('.quantity input').value);
+                    const itemTotal = productPrice * quantity;
+
+                    total += itemTotal;
+                    totalElement.textContent = total.toLocaleString();
+
+                    const cartItem = document.createElement('li');
+                    cartItem.textContent = `${productName} x ${quantity} = ${itemTotal.toLocaleString()} VNĐ`;
+                    cart.appendChild(cartItem);
+
+                    cartItems.push({
+                        name: productName,
+                        quantity: quantity,
+                        price: productPrice
+                    });
+                });
+            });
+
+            orderForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+
+                if (cartItems.length === 0) {
+                    alert('Vui lòng chọn sản phẩm trước khi đặt hàng.');
+                    return;
+                }
+
+                // Tạo nội dung email
+                let orderDetails = "Thông tin đơn hàng:\n\n";
+                cartItems.forEach(item => {
+                    orderDetails += `${item.name} x ${item.quantity} = ${item.price * item.quantity} VNĐ\n`;
+                });
+                orderDetails += `\nTổng tiền: ${total.toLocaleString()} VNĐ`;
+                orderDetails += `\n\nThông tin khách hàng:\nTên: ${name}\nEmail: ${email}`;
+
+                // Sử dụng EmailJS để gửi email
+                const templateParams = {
+                    to_email: 'hdehoang070@gmail.com', // Email của bạn
+                    subject: 'Đơn hàng từ website',
+                    message: orderDetails
+                };
+
+                emailjs.send('service_14avc5b', 'template_49yqxy7', templateParams) // Thay bằng Service ID và Template ID của bạn
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('Đơn hàng của bạn đã được gửi thành công!');
+                        cart.innerHTML = '';
+                        total = 0;
+                        totalElement.textContent = '0';
+                        cartItems = [];
+                        orderForm.reset();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert('Có lỗi xảy ra khi gửi đơn hàng. Vui lòng thử lại sau.');
+                    });
+            });
+        });
+    </script>
+</body>
+</html>
